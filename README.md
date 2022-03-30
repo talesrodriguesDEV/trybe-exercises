@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositório visa apresentar de maneira sistemática os exercícios que tenho desenvolvido ao longo de minha formação na [Trybe (https://www.betrybe.com/) :rocket:
+Este repositório visa apresentar de maneira sistemática os exercícios que tenho desenvolvido ao longo de minha formação na [Trybe] (https://www.betrybe.com/) :rocket:
 
 Meu linkedin: https://www.linkedin.com/in/tales-rodrigues-aba838235/
 
