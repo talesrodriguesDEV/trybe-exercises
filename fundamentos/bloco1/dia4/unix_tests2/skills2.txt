@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Trybe
+Programação
+Fundamentos
+Shell
+Kernell
