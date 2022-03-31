@@ -1,0 +1,33 @@
+h1 {
+    color: orange;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: wavy;
+}
+ul {
+    background-color: aqua;
+    line-height: 20px;
+    text-align: center;
+}
+.class1 {
+    background-color: blueviolet;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+    font-style: oblique;
+    text-align: center;
+    text-decoration: underline;
+}
+body {
+    font-size: 16px;
+}
+#cor1{
+    background-color: yellow;
+}
+#cor2{
+    background-color: red;
+}
+#cor3{
+    background-color: brown;
+}
