@@ -1,6 +1,6 @@
 ol {
     background-color: yellow;
-    width: 830px;
+    width: 1050px;
 }
 
 .even {
@@ -18,4 +18,12 @@ h1, h3 {
 h1 em {
     width: 40px;
     border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
 }
