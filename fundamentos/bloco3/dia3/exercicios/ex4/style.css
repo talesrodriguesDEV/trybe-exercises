@@ -1,0 +1,12 @@
+ol {
+    background-color: yellow;
+    width: 830px;
+}
+
+.even {
+    color: green;
+}
+
+.odd {
+    text-transform: uppercase;
+}
