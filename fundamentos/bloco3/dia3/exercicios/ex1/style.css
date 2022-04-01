@@ -9,9 +9,7 @@
     width: 100px;
     position: absolute;
     top: 445px;
-    left: 60px;
-    
-    
+    left: 60px;    
   }
   
   .baloon {
@@ -25,6 +23,8 @@
     font-size: 25px;
     position: absolute;
     z-index: 2;
+    top: 320px;
+    left: 320px;
   }
   
   .bowser {
