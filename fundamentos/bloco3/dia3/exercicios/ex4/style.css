@@ -1,0 +1,62 @@
+ol {
+    background-color: yellow;
+    width: 1050px;
+}
+
+.even {
+    color: green;
+}
+
+.odd {
+    text-transform: uppercase;
+}
+
+h1, h3 {
+    color: red;
+}
+
+h1 em {
+    width: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+ul.listaLP :nth-of-type(-n + 3) {
+    color: blue;
+}
+
+li i:first-child {
+    background-color: pink;
+}
+
+ul li a.stack:hover{
+    font-weight: bold;
+    color: orange;
+}
+
+ul li a.w3s:hover{
+    font-weight: bold;
+    color: green;
+}
+
+ul li a.mdn:hover{
+    font-weight: bold;
+    color: black;
+}
+
+ul li a.devdocs:hover{
+    font-weight: bold;
+    color: yellow;
+}
+
+ul li a.trybe:hover{
+    font-weight: bold;
+    color: darkcyan;
+}
