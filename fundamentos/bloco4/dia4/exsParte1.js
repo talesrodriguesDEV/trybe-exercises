@@ -52,3 +52,5 @@ leitor.livrosFavoritos.push({
     });
 
 console.table(leitor.livrosFavoritos);
+//8
+console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos');
