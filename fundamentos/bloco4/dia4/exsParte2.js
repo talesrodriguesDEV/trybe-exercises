@@ -62,3 +62,18 @@ function maiorNome(nome) {
     return maiorNome;
 }
 console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+//5
+function moda(array) {
+    for(index = 0; index < array.length; index += 1) {
+
+    }
+}
+//6
+function somatorio(n) {
+    let soma = 0;
+    for (index = 1; index <= n; index += 1) {
+        soma += index;
+    }
+    return soma;
+}
+console.log(somatorio(3));
