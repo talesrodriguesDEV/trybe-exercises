@@ -77,3 +77,18 @@ function somatorio(n) {
     return soma;
 }
 console.log(somatorio(3));
+//7
+function wordEnding (word, ending) {
+    arrayWord = word.split('');
+    arrayEnding = ending.split('');
+    if(arrayEnding < arrayWord) {
+        if(arrayWord[arrayWord.length - 1] === arrayEnding[arrayEnding.length - 1] && arrayWord[arrayWord.length - 2] === arrayEnding[arrayEnding.length - 2] && arrayWord[arrayWord.length - 3] === arrayEnding[arrayEnding.length - 3]) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return 'Parâmetros inválidos'
+    }
+}
+console.log(wordEnding('tales', 'les'));
