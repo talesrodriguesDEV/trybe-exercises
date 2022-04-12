@@ -112,3 +112,11 @@ let moradores = {
   };
 console.log("A pessoa moradora do bloco 2 de nome " + moradores.blocoDois[1].nome + " " + moradores.blocoDois[1].sobrenome + " mora no " + moradores.blocoDois[1].andar + "º andar, apartamento " + moradores.blocoDois[1].apartamento);
 //5
+console.log("Pessoas moradoras do bloco 1:");
+for(index = 0; index < moradores.blocoUm.length; index += 1) {
+    console.log(moradores.blocoUm[index].nome + " " + moradores.blocoUm[index].sobrenome);
+}
+console.log("Pessoas moradoras do bloco 2:");
+for(index = 0; index < moradores.blocoDois.length; index += 1) {
+    console.log(moradores.blocoDois[index].nome + " " + moradores.blocoDois[index].sobrenome);
+}
