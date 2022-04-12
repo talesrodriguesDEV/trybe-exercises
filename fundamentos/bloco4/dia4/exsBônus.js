@@ -1,11 +1,41 @@
 //1
 function numConversor(roman) {
     let conversor = {
-        I: "1",
-
+        I: 1,
+        V: 5,
+        X: 10,
+        L: 50,
+        C: 100,
+        D: 500,
+        M: 1000,
     };
+    let indoA = 0;
+    for(index = 0; index < roman.length; index += 1) {
+        if(roman[index] === "I" && roman[index + 1] !== "V" && roman[index + 1] !== "X"){
+            indoA += 1;
+        }
+        if(roman[index] === "I" && roman[index + 1] === "V") {
+            indoA += 4;
+        }
+        if(roman[index] === "I" && roman[index + 1] === "X") {
+            indoA += 9;
+        }
+        if(roman[index] === "V" && roman[index - 1] !== "I"){
+            indoA += 5;
+        }
+        if(roman[index] === "X" && roman[index - 1] !== "I" && roman[index + 1] !== "L" && roman[index + 1] !== "C"){
+            indoA += 10;
+        }
+        if(roman[index] === "L" && roman[index - 1] !== "X") {
+            indoA += 50;
+        }
+        if(roman[index] === "L" && roman[index - 1] === "X") {
+            indoA += 40;
+        }
+    }
     return indoA;
 }
+console.log(numConversor(""));
 //2
 function arrayOfNumbers(vector) {
     let pares = [];
