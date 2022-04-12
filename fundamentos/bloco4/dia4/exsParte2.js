@@ -64,10 +64,26 @@ function maiorNome(nome) {
 console.log(maiorNome(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 //5
 function moda(array) {
-    for(index = 0; index < array.length; index += 1) {
-
+    let rep = [];
+    for(let index = 0; index < array.length; index += 1) {
+        rep.push(1);
+        for(let index2 = index + 1; index2 < array.length; index2 += 1) {
+            if(array[index] === array[index2]) {
+                rep[index] += 1;
+            } 
+        }
     }
+    let maisRep = 0;
+    let moda;
+    for(let index3 = 0; index3 < rep.length; index3 += 1) {
+        if(rep[index3] > maisRep) {
+            maisRep = rep[index3];
+            moda = array[index3];
+        }
+    }
+    return moda;
 }
+console.log(moda([2, 3, 2, 8, 5, 8, 2, 8, 2, 3, 7, 8, 2]));
 //6
 function somatorio(n) {
     let soma = 0;
