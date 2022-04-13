@@ -32,10 +32,28 @@ function numConversor(roman) {
         if(roman[index] === "L" && roman[index - 1] === "X") {
             indoA += 40;
         }
+        if(roman[index] === "C" && roman[index - 1] !== "X" && roman[index + 1] !== "M" && roman[index + 1] !== "D") {
+            indoA += 100;
+        }
+        if(roman[index] === "C" && roman[index - 1] === "X") {
+            indoA += 90;
+        }
+        if(roman[index] === "D" && roman[index - 1] !== "C") {
+            indoA += 500;
+        }
+        if(roman[index] === "D" && roman[index - 1] === "C") {
+            indoA += 400;
+        }
+        if(roman[index] === "M" && roman[index - 1] !== "C") {
+            indoA += 1000;
+        }
+        if(roman[index] === "M" && roman[index - 1] === "C") {
+            indoA += 900;
+        }
     }
     return indoA;
 }
-console.log(numConversor(""));
+console.log(numConversor("MMCDXLVII"));
 //2
 function arrayOfNumbers(vector) {
     let pares = [];
