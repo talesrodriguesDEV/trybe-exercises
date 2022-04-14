@@ -97,6 +97,12 @@
           document.querySelector('.lista').appendChild(item);
           item.innerText = umADez[index];
       }
+      // 9
+      for (index = 1; index <= 3; index += 1) {
+          let newH3 = document.createElement('h3');
+          document.querySelector('main').appendChild(newH3);
+          newH3.innerText = index + 'º tag h3';
+      }
     </script>
   </body>
 </html>
