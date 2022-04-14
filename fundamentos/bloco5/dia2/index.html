@@ -87,7 +87,16 @@
       let smallImage = document.createElement('img');
       document.querySelector('.left-section').appendChild(smallImage);
       smallImage.src = 'https://picsum.photos/200';
-      //
+      // 8
+      let lista = document.createElement('ul');
+      document.querySelector('.right-section').appendChild(lista);
+      lista.className = 'lista';
+      let umADez = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (index = 0; index < umADez.length; index += 1) {
+          let item = document.createElement('li');
+          document.querySelector('.lista').appendChild(item);
+          item.innerText = umADez[index];
+      }
     </script>
   </body>
 </html>
