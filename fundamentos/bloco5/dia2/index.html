@@ -70,8 +70,11 @@
       // 3
       let centerSection = document.createElement('section');
       document.querySelector('main').appendChild(centerSection);
-      document.querySelector('main').className = 'center-content';
-      
+      document.querySelector('section').className = 'center-content';
+      // 4
+      let newP = document.createElement('p');
+      document.querySelector('.center-content').appendChild(newP);
+      newP.innerText = 'Fazendo o exercício 4!';
     </script>
   </body>
 </html>
