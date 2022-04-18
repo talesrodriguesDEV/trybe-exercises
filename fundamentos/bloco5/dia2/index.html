@@ -58,7 +58,69 @@
   <body>
     <script>
       // COLOQUE SEU CÓDIGO AQUI
-      
+      // Parte I
+      // 1
+      let newH1 = document.createElement('h1');
+      document.querySelector('body').appendChild(newH1);
+      document.querySelector('h1').innerText = 'Exercício 5.2 - JavaScript DOM';
+      // 2 
+      let newMain = document.createElement('main');
+      document.querySelector('body').appendChild(newMain);
+      document.querySelector('main').className = 'main-content';
+      // 3
+      let centerSection = document.createElement('section');
+      document.querySelector('main').appendChild(centerSection);
+      centerSection.className = 'center-content';
+      // 4
+      let newP = document.createElement('p');
+      document.querySelector('.center-content').appendChild(newP);
+      newP.innerText = 'Fazendo o exercício 4!';
+      // 5
+      let leftSection = document.createElement('section');
+      document.querySelector('main').appendChild(leftSection);
+      leftSection.className = 'left-content';
+      // 6
+      let rightSection = document.createElement('section');
+      document.querySelector('main').appendChild(rightSection);
+      rightSection.className = 'right-content';
+      // 7
+      let smallImage = document.createElement('img');
+      document.querySelector('.left-content').appendChild(smallImage);
+      smallImage.src = 'https://picsum.photos/200';
+      // 8
+      let lista = document.createElement('ul');
+      document.querySelector('.right-content').appendChild(lista);
+      lista.className = 'lista';
+      let umADez = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (index = 0; index < umADez.length; index += 1) {
+          let item = document.createElement('li');
+          document.querySelector('.lista').appendChild(item);
+          item.innerText = umADez[index];
+      }
+      // 9
+      for (index = 1; index <= 3; index += 1) {
+          let newH3 = document.createElement('h3');
+          document.querySelector('main').appendChild(newH3);
+          newH3.innerText = index + 'º tag h3';
+      }
+      // Parte II
+      // 1
+      newH1.className = 'title';
+      // 2
+      let tagsH3 = document.querySelectorAll('h3');
+      for (index = 0; index < tagsH3.length; index += 1) {
+          tagsH3[index].className = 'description';
+      }
+      // 3 
+      document.querySelector('main').removeChild(leftSection);
+      // 4
+      rightSection.style.marginRight = 'auto';
+      // 5
+      centerSection.parentElement.style.backgroundColor = 'green';
+      // 6
+      let elementosDaLista = document.querySelectorAll('li');
+      lista.removeChild(elementosDaLista[9]);
+      lista.removeChild(elementosDaLista[8]);
     </script>
   </body>
 </html>
