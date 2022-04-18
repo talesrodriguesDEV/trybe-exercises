@@ -30,3 +30,15 @@ for (index = 0; index < dezDaysList.length; index += 1) {
         day.className = 'friday';
     }
 }
+
+// 2
+function holidays(nome) {
+    let feriados = document.createElement('button');
+    feriados.id = 'btn-holiday';
+    let container = document.querySelector('.buttons-container');
+    container.appendChild(feriados);
+    feriados.innerText = nome;
+}
+holidays('Feriados');
+
+// 3
