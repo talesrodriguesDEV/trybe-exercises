@@ -24,10 +24,10 @@ for (index = 0; index < dezDaysList.length; index += 1) {
     day.innerText = dezDaysList[index];
     day.className = 'day';
     if(dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31) {
-        day.className = 'day holiday';
+        day.classList.add('holiday');
     }
     if(dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 || dezDaysList[index] === 25) {
-        day.className = 'day friday';
+        day.classList.add('friday');
     }
 }
 
@@ -41,10 +41,29 @@ function holidays(nome) {
 }
 holidays('Feriados');
 
-// 3
+// 3*
 let botao = document.querySelector('#btn-holiday');
 botao.addEventListener('click', mudarCorFeriados);
+let contador = 0
 function mudarCorFeriados() {
-    let days = document.querySelector('#days');
-
+    let feriados = document.querySelectorAll('.holiday');
+    for (index = 0; index < feriados.length; index += 1) {
+        if (contador % 2 !== 0) {
+            feriados[index].style.backgroundColor = rgb(238,238,238);
+        } else {
+            feriados[index].style.backgroundColor = 'blue';
+        }
+    }
 }
+
+// 4
+function friday(nome) {
+    let fridays = document.createElement('button');
+    fridays.id = 'btn-friday';
+    let container = document.querySelector('.buttons-container');
+    container.appendChild(fridays);
+    fridays.innerText = nome;
+}
+friday('Sexta-feira');
+
+// 5
