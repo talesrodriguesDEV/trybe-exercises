@@ -24,10 +24,10 @@ for (index = 0; index < dezDaysList.length; index += 1) {
     day.innerText = dezDaysList[index];
     day.className = 'day';
     if(dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31) {
-        day.className = 'holiday';
+        day.className = 'day holiday';
     }
     if(dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 || dezDaysList[index] === 25) {
-        day.className = 'friday';
+        day.className = 'day friday';
     }
 }
 
@@ -42,3 +42,9 @@ function holidays(nome) {
 holidays('Feriados');
 
 // 3
+let botao = document.querySelector('#btn-holiday');
+botao.addEventListener('click', mudarCorFeriados);
+function mudarCorFeriados() {
+    let days = document.querySelector('#days');
+
+}
