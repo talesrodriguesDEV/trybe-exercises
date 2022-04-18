@@ -41,15 +41,15 @@ function holidays(nome) {
 }
 holidays('Feriados');
 
-// 3*
+// 3
 let botao = document.querySelector('#btn-holiday');
 botao.addEventListener('click', mudarCorFeriados);
-let contador = 0
 function mudarCorFeriados() {
     let feriados = document.querySelectorAll('.holiday');
     for (index = 0; index < feriados.length; index += 1) {
-        if (contador % 2 !== 0) {
-            feriados[index].style.backgroundColor = rgb(238,238,238);
+        if (feriados[index].style.backgroundColor === 'blue') {
+            // feriados[index].style.backgroundColor = rgb(238,238,238);
+            feriados[index].removeAttribute('style');
         } else {
             feriados[index].style.backgroundColor = 'blue';
         }
@@ -67,3 +67,18 @@ function friday(nome) {
 friday('Sexta-feira');
 
 // 5
+let botao2 = document.querySelector('#btn-friday');
+botao2.addEventListener('click', mudarCorSextas);
+let fridayDays = [4, 11, 18, 25];
+function mudarCorSextas() {
+    let sextas = document.querySelectorAll('.friday');
+    for (index = 0; index < sextas.length; index += 1) {
+        if(sextas[index].style.color !== 'red') {
+            sextas[index].innerText = 'Sextou!';
+            sextas[index].style.color = 'red';
+        } else {
+            sextas[index].removeAttribute('style');
+            sextas[index].innerText = fridayDays[index];
+        }
+    }
+}
