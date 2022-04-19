@@ -104,3 +104,13 @@ function addNewTask(string) {
     newTask.innerText = string;
 }
 addNewTask('Cozinhar');
+
+// 8
+function addColor(cor) {
+    let legenda = document.createElement('div');
+    legenda.className = 'task';
+    legenda.style.backgroundColor = cor;
+    let container = document.querySelector('.my-tasks');
+    container.appendChild(legenda);
+}
+addColor('red');
