@@ -95,3 +95,12 @@ for (index = 0; index < dezDaysList.length; index += 1) {
     days[index].addEventListener('mouseover', zoomIn);
     days[index].addEventListener('mouseleave', zoomOut);
 }
+
+// 7
+function addNewTask(string) {
+    let newTask = document.createElement('span');
+    let container = document.querySelector('.my-tasks');
+    container.appendChild(newTask);
+    newTask.innerText = string;
+}
+addNewTask('Cozinhar');
