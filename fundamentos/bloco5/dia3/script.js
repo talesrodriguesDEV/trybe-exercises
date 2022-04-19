@@ -139,3 +139,29 @@ function pinDay(event) {
         event.target.style.color = legenda.style.backgroundColor;
     }
 }
+
+// Bônus
+let compromisso = document.createElement('li');
+let container = document.querySelector('.task-list');
+let input = document.querySelector('#task-input');
+let botao3 = document.querySelector('#btn-add');
+botao3.addEventListener('click', getInput);
+input.addEventListener('keydown', getInputEnter);
+container.appendChild(compromisso);
+// compromisso.addEventListener('change', getInput);
+function getInput() {
+    if (input.value === '') {
+        alert('Por favor, escreva seu compromisso!');
+    } else {
+        compromisso.innerText = input.value;
+    }
+}
+function getInputEnter(event) {
+    if (event.key === 'Enter') {
+        if (input.value === '') {
+            alert('Por favor, escreva seu compromisso!');
+        } else {
+            compromisso.innerText = input.value;
+        }
+    }
+}
