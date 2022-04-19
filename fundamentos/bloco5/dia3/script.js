@@ -114,3 +114,14 @@ function addColor(cor) {
     container.appendChild(legenda);
 }
 addColor('red');
+
+// 9
+let task = document.querySelector('.task');
+task.addEventListener('click', selectTask);
+function selectTask(event) {
+    if (event.target.className === 'task selected') {
+        event.target.classList.remove('selected');
+    } else {
+        event.target.classList.add('selected');
+    }
+}
