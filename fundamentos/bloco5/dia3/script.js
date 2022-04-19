@@ -82,3 +82,16 @@ function mudarCorSextas() {
         }
     }
 }
+
+// 6
+function zoomIn(event) {
+    event.target.style.fontSize = 200 + '%';
+}
+function zoomOut(event) {
+    event.target.style.fontSize = 100 + '%';
+}
+for (index = 0; index < dezDaysList.length; index += 1) {
+    let days = document.querySelectorAll('.day');
+    days[index].addEventListener('mouseover', zoomIn);
+    days[index].addEventListener('mouseleave', zoomOut);
+}
