@@ -73,9 +73,9 @@ let fridayDays = [4, 11, 18, 25];
 function mudarCorSextas() {
     let sextas = document.querySelectorAll('.friday');
     for (index = 0; index < sextas.length; index += 1) {
-        if(sextas[index].style.color !== 'red') {
+        if(sextas[index].style.color !== 'purple') {
             sextas[index].innerText = 'Sextou!';
-            sextas[index].style.color = 'red';
+            sextas[index].style.color = 'purple';
         } else {
             sextas[index].removeAttribute('style');
             sextas[index].innerText = fridayDays[index];
@@ -123,5 +123,19 @@ function selectTask(event) {
         event.target.classList.remove('selected');
     } else {
         event.target.classList.add('selected');
+    }
+}
+
+// 10
+for (index = 0; index < dezDaysList.length; index += 1) {
+    let days = document.querySelectorAll('.day');
+    days[index].addEventListener('click', pinDay);
+}
+function pinDay(event) {
+    let legenda = document.querySelector('.selected');
+    if (event.target.style.color === legenda.style.backgroundColor) {
+        event.target.style.color = 'rgb(119,119,119)';
+    } else {
+        event.target.style.color = legenda.style.backgroundColor;
     }
 }
