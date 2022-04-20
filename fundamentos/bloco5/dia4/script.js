@@ -72,6 +72,7 @@ window.onload = function () {
 function initialRenderization() {
     body.style.backgroundColor = localStorage.getItem('corDeFundo');
     body.style.color = localStorage.getItem('CorTexto');
+    body.style.fontSize = localStorage.getItem('TamanhoDoTexto') + 'px';
 }
 
 // 1
@@ -89,4 +90,12 @@ textColorInput.addEventListener('keyup', changeTextColor);
 function changeTextColor() {
     body.style.color = textColorInput.value;
     localStorage.setItem('CorTexto', textColorInput.value);
+}
+
+// 3
+let fontSizeInput = document.querySelector('#text-font-size');
+fontSizeInput.addEventListener('keyup', changeTextFontSize);
+function changeTextFontSize() {
+    body.style.fontSize = fontSizeInput.value + 'px';
+    localStorage.setItem('TamanhoDoTexto', fontSizeInput.value);
 }
