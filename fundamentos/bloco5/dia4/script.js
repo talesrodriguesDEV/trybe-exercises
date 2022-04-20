@@ -74,6 +74,7 @@ function initialRenderization() {
     body.style.color = localStorage.getItem('CorTexto');
     body.style.fontSize = localStorage.getItem('TamanhoDoTexto') + 'px';
     body.style.lineHeight = localStorage.getItem('AlturaDasLinhas') + 'px';
+    body.style.fontFamily = localStorage.getItem('FonteDoTexto');
 }
 
 // 1
@@ -107,4 +108,12 @@ lineHeightInput.addEventListener('keyup', changeTextLineHeight);
 function changeTextLineHeight() {
     body.style.lineHeight = lineHeightInput.value + 'px';
     localStorage.setItem('AlturaDasLinhas', lineHeightInput.value);
+}
+
+// 5
+let fontFamilyInput = document.querySelector('#text-font-family');
+fontFamilyInput.addEventListener('keyup', changeTextFontFamily);
+function changeTextFontFamily() {
+    body.style.fontFamily = fontFamilyInput.value;
+    localStorage.setItem('FonteDoTexto', fontFamilyInput.value);
 }
