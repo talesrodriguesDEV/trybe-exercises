@@ -15,9 +15,9 @@ title.style.fontSize = 300 + '%';
 const link = document.querySelector('a');
 link.style.textDecoration = 'none';
 link.style.color = 'black';
-link.addEventListener('mouseover', changeColor);
-link.addEventListener('mouseleave', changeColor);
-function changeColor(event) {
+link.addEventListener('mouseover', changeLinkColor);
+link.addEventListener('mouseleave', changeLinkColor);
+function changeLinkColor(event) {
     if (event.target.style.color === 'black') {
         event.target.style.color = 'blue';
     } else {
@@ -66,5 +66,20 @@ for (index = 0; index < label.length; index += 1) {
 }
 
 // Requisitos
-// 1
+window.onload = function () {
+    initialRenderization();
+}
+function initialRenderization() {
+    body.style.backgroundColor = localStorage.getItem('corDeFundo');
+}
 
+// 1
+let fundo = document.querySelector('#color');
+fundo.addEventListener('keyup', changeBackgroundColor);
+function changeBackgroundColor() {
+    body.style.backgroundColor = fundo.value;
+    window.localStorage.setItem('corDeFundo', fundo.value);
+}
+// localStorage.removeItem('corDeFundo');
+
+// 2
