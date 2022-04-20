@@ -73,6 +73,7 @@ function initialRenderization() {
     body.style.backgroundColor = localStorage.getItem('corDeFundo');
     body.style.color = localStorage.getItem('CorTexto');
     body.style.fontSize = localStorage.getItem('TamanhoDoTexto') + 'px';
+    body.style.lineHeight = localStorage.getItem('AlturaDasLinhas') + 'px';
 }
 
 // 1
@@ -98,4 +99,12 @@ fontSizeInput.addEventListener('keyup', changeTextFontSize);
 function changeTextFontSize() {
     body.style.fontSize = fontSizeInput.value + 'px';
     localStorage.setItem('TamanhoDoTexto', fontSizeInput.value);
+}
+
+// 4
+let lineHeightInput = document.querySelector('#text-height');
+lineHeightInput.addEventListener('keyup', changeTextLineHeight);
+function changeTextLineHeight() {
+    body.style.lineHeight = lineHeightInput.value + 'px';
+    localStorage.setItem('AlturaDasLinhas', lineHeightInput.value);
 }
