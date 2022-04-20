@@ -71,15 +71,22 @@ window.onload = function () {
 }
 function initialRenderization() {
     body.style.backgroundColor = localStorage.getItem('corDeFundo');
+    body.style.color = localStorage.getItem('CorTexto');
 }
 
 // 1
-let fundo = document.querySelector('#color');
-fundo.addEventListener('keyup', changeBackgroundColor);
+let BackgroundColorInput = document.querySelector('#color');
+BackgroundColorInput.addEventListener('keyup', changeBackgroundColor);
 function changeBackgroundColor() {
-    body.style.backgroundColor = fundo.value;
-    window.localStorage.setItem('corDeFundo', fundo.value);
+    body.style.backgroundColor = BackgroundColorInput.value;
+    localStorage.setItem('corDeFundo', BackgroundColorInput.value);
 }
 // localStorage.removeItem('corDeFundo');
 
 // 2
+let textColorInput = document.querySelector('#text-color');
+textColorInput.addEventListener('keyup', changeTextColor);
+function changeTextColor() {
+    body.style.color = textColorInput.value;
+    localStorage.setItem('CorTexto', textColorInput.value);
+}
