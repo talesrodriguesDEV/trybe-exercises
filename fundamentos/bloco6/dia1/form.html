@@ -7,6 +7,26 @@
     <title>TrybeTrip</title>
 </head>
 <body>
-    
+    <form action="" method="get">
+        <label for="name-input">Nome Completo: </label>
+        <input required type="text" id="name-input" name="user-name" minlength="10" maxlength="40"> <br> <br>
+        <label for="email-input">Email: </label>
+        <input required type="text" id="email-input" name="user-email" minlength="10" maxlength="50"> <br>
+        <p>Destino preferido: </p>
+        <label for="option1"><input type="radio" name="destino" id="option1">Cidade</label>
+        <label for="option2"><input type="radio" name="destino" id="option2">Campo</label>
+        <label for="option3"><input type="radio" name="destino" id="option3">Praia</label>
+        <label for="option4"><input type="radio" name="destino" id="option4">Montanhas</label>
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <textarea required name="reposta" id="answer-input" cols="30" rows="10" maxlength="500"></textarea>
+        <p>Qual a melhor data para realizar sua viagem?</p>
+        <label for="date-input">Data: <input required type="date" name="data" id="date-input"></label>
+        <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+        <label for="check1">Sim! <input type="checkbox" name="check1" id="check1"></label>
+        <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
+        <label for="check2">Concordo <input required type="checkbox" name="check2" id="check2" required></label> <br> <br>
+        <button type="submit">Finalizar cadastro</button>
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
