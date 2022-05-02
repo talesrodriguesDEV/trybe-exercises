@@ -57,3 +57,25 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+#container3 {
+  width: 100px;
+  /* border: 2px solid red; */
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+hr {
+  width: 100%;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+#container4 {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+}
