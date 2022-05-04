@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  background-color: coral;
+  color: darkmagenta;
+  list-style: none;
+}
+
+h1, h2 {
+  color: darkgreen;
+}
+
+.aside-two ul li {
+  list-style: circle;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0 10px;
+  }
+  li, p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+    margin: 0 20px;
+  }
+  li, p {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  h1, h2 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  body {
+    margin: 0 40px;
+  }
+  li, p {
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  h1, h2 {
+    font-size: 70px;
+  }
+}
