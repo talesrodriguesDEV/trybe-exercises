@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  background-color: coral;
+  color: darkmagenta;
+  list-style: none;
+}
+
+@media screen and (min-width: 260px) {
+  * {
+    margin: 1px;
+  }
+  
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+}
