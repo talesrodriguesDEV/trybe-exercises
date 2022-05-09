@@ -15,19 +15,26 @@
   <button id='button'>Somar</button>
   <p id='result'></p>
   <script>
-    function verifyBlank(value1, value2) {
+    const verifyBlank = (value1, value2) => {
       if (value1 === '' || value2 === '') {
-        throw new Error('Ambos os campos devem ser preenchidos');
+        throw new Error('Ambos os campos devem ser preenchidos.');
       }
     }
+
     function sum() {
-      const value1 = document.getElementById('value1').value;
-      const value2 = document.getElementById('value2').value;
-      verifyBlank(value1, value2);
-      const result = parseInt(value1) + parseInt(value2);
-      document.getElementById('result').innerHTML = `Resultado: ${result}`;
-      document.getElementById('value1').value = '';
-      document.getElementById('value2').value = '';
+      try {
+        const value1 = document.getElementById('value1').value;
+        const value2 = document.getElementById('value2').value;
+        verifyBlank(value1, value2);
+        const result = parseInt(value1) + parseInt(value2);
+        const paragraph = document.getElementById('result').innerHTML = `Resultado: ${result}`;
+      } catch(error) {
+        console.log(error.message);
+        document.getElementById('result').innerHTML = error.message;
+      } finally {
+        document.getElementById('value1').value = '';
+        document.getElementById('value2').value = '';
+      }
     }
     window.onload = () => {
       const button = document.getElementById('button');
