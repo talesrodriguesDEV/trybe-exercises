@@ -1,3 +1,6 @@
 [submodule "front-end/bloco9/dia3/exercise-magic-card"]
 	path = front-end/bloco9/dia3/exercise-magic-card
 	url = git@github.com:talesrodriguesDEV/exercise-magic-card.git
+[submodule "front-end/bloco11/dia1/exercise-pokedex-state"]
+	path = front-end/bloco11/dia1/exercise-pokedex-state
+	url = git@github.com:talesrodriguesDEV/exercise-pokedex-state.git
