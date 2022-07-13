@@ -7,3 +7,9 @@
 [submodule "front-end/bloco12/dia1/exercise-dog-image"]
 	path = front-end/bloco12/dia1/exercise-dog-image
 	url = git@github.com:talesrodriguesDEV/exercise-dog-image.git
+[submodule "front-end/bloco12/dia2/exercise-pokedex-router"]
+	path = front-end/bloco12/dia2/exercise-pokedex-router
+	url = git@github.com:talesrodriguesDEV/exercise-pokedex-router.git
+[submodule "front-end/bloco14/dia1/exercise-todo-list"]
+	path = front-end/bloco14/dia1/exercise-todo-list
+	url = git@github.com:talesrodriguesDEV/exercise-todo-list.git
