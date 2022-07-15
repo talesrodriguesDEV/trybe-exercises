@@ -13,3 +13,6 @@
 [submodule "front-end/bloco14/dia1/exercise-todo-list"]
 	path = front-end/bloco14/dia1/exercise-todo-list
 	url = git@github.com:talesrodriguesDEV/exercise-todo-list.git
+[submodule "front-end/bloco14/dia2/exercise-digimon-finders"]
+	path = front-end/bloco14/dia2/exercise-digimon-finders
+	url = git@github.com:talesrodriguesDEV/exercise-digimon-finders.git
