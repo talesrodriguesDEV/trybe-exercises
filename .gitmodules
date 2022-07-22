@@ -16,3 +16,9 @@
 [submodule "front-end/bloco14/dia2/exercise-digimon-finders"]
 	path = front-end/bloco14/dia2/exercise-digimon-finders
 	url = git@github.com:talesrodriguesDEV/exercise-digimon-finders.git
+[submodule "front-end/bloco15/dia2/exercise-react-with-redux-intro"]
+	path = front-end/bloco15/dia2/exercise-react-with-redux-intro
+	url = git@github.com:talesrodriguesDEV/exercise-react-with-redux-intro.git
+[submodule "front-end/bloco15/exercise-forms-redux"]
+	path = front-end/bloco15/exercise-forms-redux
+	url = git@github.com:talesrodriguesDEV/exercise-forms-redux.git
